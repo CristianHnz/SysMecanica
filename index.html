@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Mecânica</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="logoMecanica.png" alt="Logo SysMecânica" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre a Empresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="sobre" class="py-5" style="text-align: center;">
+    <div class="container">
+      <h2>Sobre a Empresa</h2>
+      <div class="servico">
+        <img src="mecanica.jpg" alt="Sobre a Empresa" style="width: 500px;" class="img-fluid">
+      </div>
+      <br>
+      <br>
+      <h2>SysMecânica</h2>
+      <p>Bem-vindo à SysMecânica!</p>
+      <span> Somos uma oficina mecânica comprometida em oferecer serviços de alta qualidade para garantir a segurança e
+        o
+        desempenho do seu veículo. Com uma equipe experiente e dedicada, oferecemos uma ampla gama de serviços
+        automotivos, desde reparos mecânicos até manutenção preventiva. Nossa missão é proporcionar uma experiência
+        excepcional aos nossos clientes, combinando expertise técnica com atendimento personalizado. Visite-nos em
+        Avenida Tiradentes 4220 e confie na SysMecânica para manter seu veículo em excelente condição.
+      </span>
+      <br>
+      <br>
+      <button id="avaliacao-btn" class="btn btn-primary">Marque uma avaliação</button>
+    </div>
+  </section>
+
+  <section id="servicos" class="py-5 bg-light">
+    <div class="container">
+      <h2 style="text-align: center;">Serviços oferecidos</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="servico">
+            <img src="trocaOleo.jpg" alt="Troca de Óleo e Filtros" class="img-fluid">
+            <h3>Troca de Óleo e Filtros:</h3>
+            <p>A troca regular de óleo e filtros é essencial para manter o motor do veículo funcionando corretamente.
+              Esse serviço envolve a remoção do óleo usado e dos filtros de óleo e ar, seguida pela substituição por
+              novos, garantindo a lubrificação adequada do motor e a filtragem eficiente de impurezas.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="servico">
+            <img src="alinhamento.jpg" alt="Alinhamento e Balanceamento" class="img-fluid">
+            <h3>Balanceamento:</h3>
+            <p>O alinhamento e balanceamento são procedimentos importantes para garantir a segurança e a estabilidade do
+              veículo. O alinhamento ajusta os ângulos das rodas para que fiquem paralelas entre si e perpendiculares ao
+              solo, enquanto o balanceamento corrige desequilíbrios nos pneus, prevenindo vibrações e desgastes
+              irregulares.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="servico">
+            <img src="ManutPreentiva.jpg" alt="Revisão Preventiva" class="img-fluid">
+            <h3>Revisão Preventiva:</h3>
+            <p>A revisão preventiva consiste em uma inspeção completa do veículo para identificar e corrigir problemas
+              antes que se tornem mais graves e custosos. Esse serviço inclui a verificação de componentes vitais, como
+              freios, suspensão, sistema elétrico, fluidos e pneus, garantindo a segurança e o bom funcionamento do
+              veículo.</p>
+          </div>
+        </div>
+        <!-- Adicione mais serviços conforme necessário -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2>Contato</h2>
+      <form id="formulario" action="#" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <p>Endereço: Avenida Tiradentes, 4220 - Erechim, Rio Grande do Sul</p>
+      <p>Telefone: (54) 4002-8922</p>
+      <div class="redes-sociais">
+        <a href="#" class="text-white">Facebook</a>
+        <a href="#" class="text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
